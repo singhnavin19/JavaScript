@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JS Where To</title>
+<script src="MyExternal.js"></script>
+<script>
+	console.log("In head")
+</script>
+</head>
+<body>
+	<input type="button" value="click me" onclick="hello();">
+
+	<script>
+		console.log("In Body")
+	</script>
+</body>
+</html>
+
+
+<!--   Important
+
+Place library script such as the jQuery library in the head section.
+
+It is a best practice to put JavaScript <script> tags just before the closing </body> tag rather than in the <head> section of your HTML.
+
+The reason for this is that HTML loads from top to bottom. The head loads first, then the body, and then everything inside the body. 
+If we put our JavaScript links in the head section, the entire JavaScript file will load before loading any of the HTML, which could cause a few problems.
+
+If you have code in your JavaScript that alters HTML as soon as the JavaScript file loads, there won't actually be any HTML elements available for it to affect yet, so it will seem as though the JavaScript code isn't working, and you may get errors.
+
+If you have a lot of JavaScript, it can visibly slow the loading of your page because it loads all of the JavaScript before it loads any of the HTML.
+
+When you place your JavaScript links at the bottom of your HTML body, 
+it gives the HTML time to load before any of the JavaScript loads, which can prevent errors, and speed up website response time.
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
